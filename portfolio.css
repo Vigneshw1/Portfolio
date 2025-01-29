@@ -1,0 +1,141 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #4a6b9d;
+}
+nav{
+    background: rgb(74, 77, 78);
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 84px;
+    padding: 10px;
+    position:fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    z-index: 1000;
+}
+nav h1{
+    font-weight:bolder;
+    font-size:xx-large;
+    color: rgb(104, 199, 209);
+    padding-top: 15px;
+}
+nav a{
+    font-size: 18px;
+    color:rgb(193, 231, 247) ;
+    text-decoration: none;
+    transition: .3s;
+    padding: 20px;
+    margin-left: 10px;
+    animation: slide 1.5s ease;
+}
+nav a:hover{
+    color:coral;
+    transition: color 0.5s ease;
+}
+div{
+    padding-top: 20px;
+}
+
+.portfolio{
+    background: rgb(255, 255, 255,0.1);
+    color:aliceblue;
+    margin: 20px 25px;
+    height: 320px;
+    width: 1300px;
+    border-radius: 20px;
+    transition:0.5s ease-in-out;
+    justify-self: center;
+    animation:slideTop 1s ease;
+}
+.portfolio h1{
+    font-family: sans-serif;
+    border-bottom: 2px solid rgb(246, 249, 249);
+    color:rgb(139, 210, 254);
+    padding-left: 20px;
+    
+}
+.portfolio:hover{
+    box-shadow: 0px 2px 5px 1px rgba(198, 196, 196, 0.715);
+    transform: scale(1.025);
+}
+#projects{
+    height:430px;
+}
+#projects:hover{
+    box-shadow: 0px 2px 5px 1px rgba(198, 196, 196, 0.715);
+    transform: scale(1.025);
+
+}
+#about{
+margin-top: 90px;
+}
+#about p,#contact p,#projects p,#skills p{
+    text-align: justify;
+    padding: 10px;
+    font-size: medium;
+    margin-right: 400px;
+}
+#projects a{
+    color:aliceblue;
+    font:100;
+    text-decoration: none;
+}
+#skills ul{
+    padding-left: 40px;
+    
+}
+footer{
+    background: rgb(74, 77, 78);
+    height: 40px;
+    position: relative;
+}
+footer p{
+    text-align: center;
+    padding-top: 10px;
+    color: aliceblue;
+}
+.email-link {
+    color: #131313d2; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slide{
+    0%{
+        transform: translateZ(0px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateZ(200px);
+        opacity: 1;
+    }
+}
+@keyframes anime{
+    0%{
+       transform: scaleX(1.2);
+       opacity: 0;
+    }
+    100%{
+        transform: scaleX(-1.5);
+        opacity: 1;
+    }
+}
